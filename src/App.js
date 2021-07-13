@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Recuperatorio Agnes Dormal Lafuentegcf </Text>
+      <Text>Recuperatorio Agnes Dormal Lafuente</Text>
       <StatusBar style="auto" />
     </View>
   );
