@@ -6,7 +6,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import {Menu} from './screens/Menu';
 import {Imports} from './screens/Imports';
 import {ViewImportedCards} from './screens/ViewImportedCards';
-import {Bin} from './screens/Bin';
+
 
 
 const Drawer = createDrawerNavigator();

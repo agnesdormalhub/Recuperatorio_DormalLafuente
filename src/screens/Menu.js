@@ -15,14 +15,7 @@ export class Menu extends Component {
 
   position = new Animated.Value(1)
   
-//   animate = () => {
-//     Animated.timing(this.position, {
-//       toValue:300,
-//       duration:1000,
-//       easing: Easing.elastic(3),
-//       useNativeDriver: false,
-//     }).start();
-//   }
+
 
   
   render() {

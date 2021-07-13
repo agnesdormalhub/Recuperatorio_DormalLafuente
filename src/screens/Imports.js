@@ -39,23 +39,11 @@ getDataFromApi(numero) {
     this.setState({contactos: adicionar, activity: false})
   })
 }
-// getDataFromApi() {
-//   getData(1)
-//   .then((result)=> {
-//     this.setState({show: result})
-//   }) 
-  
-// }
+
 
 async componentDidMount(){
   
-  // let obtenerContactos = await AsyncStorage.getItem("contactos")
-  // obtenerContactos = JSON.parse(obtenerContactos)
   
-  // if(obtenerContactos == null) obtenerContactos = []
-  // this.setState({ 
-  //   almacenar: obtenerContactos,
-  // })
 }
 
 async storeData(value){
@@ -88,16 +76,10 @@ async storeData(value){
 }
 
 async deleteData(value){
-  // try{
-  //     const jsonUsers = JSON.stringify(this.state.users);
-  //     await AsyncStorage.setItem("Users", jsonUsers);
-  //     console.log("Datos Almacenados");
+ 
       Alert.alert("Ha eliminado la tarjeta.")
 
-  // }
-  // catch(e){
-  //  console.log(e);
-  // }
+ 
   let eliminado = this.state.contactos.filter((contacto) => {
     return contacto.id !== value.id
 })

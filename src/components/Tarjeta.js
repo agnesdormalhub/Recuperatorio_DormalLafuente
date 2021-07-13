@@ -22,50 +22,12 @@ export default class Tarjeta extends Component {
     }
   }  
 
-//   async comment(){
-//     try{
-  
-//     let comentario = this.state.textHandler;
-//     let contactos = JSON.parse(await AsyncStorage.getItem('contactos'))
-  
-//       contactos.map((contacto) => {
-//         if(contacto.login.uuid == this.props.uuid) {
-//           contacto.comment = comentario 
-//         }
-//       })
-  
-  
-//      const jsonObjeto = JSON.stringify(contactos)
-     
-//      console.log(jsonObjeto) 
-     
-//      await AsyncStorage.setItem("contactos", jsonObjeto);
-//      this.setState({
-//        comentario: this.state.textHandler
-//      })
-//     }catch(e) {
-//       console.log(e)
-//     }
-    
-//   }
+
 
   position = new Animated.Value(0);
   rotation = new Animated.Value(0);
 
-//   topDown = () => {
 
-//     Animated.parallel([
-
-//       Animated.timing(this.rotation, {
-//         toValue: this.state.toValue,
-//         duration: 1000,
-//         useNativeDriver: true, 
-//       })
-
-//     ]).start();
-  
-//     this.setState({toValue: this.state.toValue + 1})
-//   }
 
   render (){
 
@@ -98,20 +60,6 @@ export default class Tarjeta extends Component {
       </Animated.View>
       
 
-      {/* <Animated.View style={{
-        backfaceVisibility: 'hidden',
-        position:'absolute',
-        transform: [
-            {translateY: this.position},
-            {rotateX: rotB}
-
-        ],}}>
-            <View style={cardStyle.container}>
-            <Text style={cardStyle.textButton} >{this.state.comentario}</Text>
-            <TextInput style={cardStyle.input} placeholder='Añadir comentario' onChangeText={ value => this.setState({textHandler:value})}></TextInput>
-            <TouchableOpacity onPress={()=> this.comment()}><Text style={cardStyle.textButton} >Almacenar comentario</Text></TouchableOpacity>
-            </View>
-       </Animated.View>  */}
       </TouchableOpacity>
 
 
